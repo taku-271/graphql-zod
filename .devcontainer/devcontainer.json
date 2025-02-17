@@ -1,0 +1,17 @@
+{
+  "name": "graphql-zod",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "graphql-zod",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "bun",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "Github.vscode-pull-request-github",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
