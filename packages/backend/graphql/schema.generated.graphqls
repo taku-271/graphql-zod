@@ -1,0 +1,15 @@
+directive @alphabet(msg: String) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @japanese(msg: String) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @required(msg: String) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Query {
+  hello: String
+}
+
+input TestInput {
+  address: String!
+  email: String!
+  name: String!
+}

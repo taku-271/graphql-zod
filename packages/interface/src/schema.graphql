@@ -1,0 +1,17 @@
+directive @required(msg: String) on INPUT_FIELD_DEFINITION | FIELD_DEFINITION
+directive @alphabet(msg: String) on INPUT_FIELD_DEFINITION | FIELD_DEFINITION
+directive @japanese(msg: String) on INPUT_FIELD_DEFINITION | FIELD_DEFINITION
+
+input TestInput {
+  email: String! @required(msg: "メールを入力してください")
+  name: String!
+    @required(msg: "名前を入力してください")
+    @alphabet(msg: "名前は日本語またはアルファベットで入力してください")
+  address: String!
+    @required(msg: "住所を入力してください")
+    @japanese(msg: "住所は日本語で入力してください")
+}
+
+type Query {
+  hello: String
+}

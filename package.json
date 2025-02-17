@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "zod": "^3.24.2"
+  }
+}
